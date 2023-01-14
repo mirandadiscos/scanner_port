@@ -1,6 +1,7 @@
 require 'socket'
+
 class Scanner_port
-    def scan(host,port)
+    def self.scan(host,port)
         begin
             socket = TCPSocket.new(host, port)
             status = "open"
@@ -12,6 +13,6 @@ class Scanner_port
 end
 
 host, *ports = ARGV
-ports.each{|port| scan(host,port)}
+ports.each{|port| Scanner_port.scan(host,port)}
 
 
