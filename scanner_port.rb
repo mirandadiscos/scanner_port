@@ -1,6 +1,6 @@
 require 'socket'
 
-class Scanner_port
+class Scanner
     def self.scan(host,port)
         begin
             socket = TCPSocket.new(host, port)
@@ -13,6 +13,6 @@ class Scanner_port
 end
 
 host, *ports = ARGV
-ports.each{|port| Scanner_port.scan(host,port)}
+ports.each{|port| Scanner.scan(host,port)}
 
 
