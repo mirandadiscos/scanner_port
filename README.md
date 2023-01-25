@@ -10,7 +10,7 @@ Replace for IP and Ports to be tested
 ruby scanner_port.rb ip port1 port2 port3
 
 Ex:
-ruby scanner_port.rb 127.0.0.1 55 54 41 
+ruby scanner_port.rb 127.0.0.1 55 54 42
 
 OutPut:
 
