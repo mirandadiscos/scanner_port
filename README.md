@@ -1,6 +1,6 @@
 # scanner_port
 
-How use:
+How to use:
 git clone
 
 cd scanner_port
